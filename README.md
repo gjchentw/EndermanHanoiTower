@@ -132,14 +132,14 @@ commands:
     usage: "For a list of commands, type /ex help"
     aliases: example
 permissions:
-  example.test:
+  ehtest:
     description: DESCRIPTION
     default: true
-  example.*:
+  eh*:
     description: Grants all other permissions
     default: false
     children:
-      example.test: true
+      ehtest: true
 ```
 
 ### .github/dependabot.yml

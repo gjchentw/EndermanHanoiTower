@@ -10,11 +10,11 @@ commands:
     usage: "For a list of commands, type /ex help"
     aliases: example
 permissions:
-  example.test:
+  eh.test:
     description: DESCRIPTION
     default: true
-  example.*:
+  eh.*:
     description: Grants all other permissions
     default: false
     children:
-      example.test: true
+      eh.test: true
