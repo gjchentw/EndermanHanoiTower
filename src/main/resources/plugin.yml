@@ -3,12 +3,12 @@ name: ${NAME}
 version: "${VERSION}"
 api-version: "1.16"
 author: beerops.dev
-description: DESCRIPTION
+description: When Enderman lost in a tample at Hanoi, He must solve the accent Hanoi Towel mystery...
 commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
+  dotower:
+    description: Base command for Enderman Hanoi Tower
+    usage: "For a list of commands, type /dotower help"
+    aliases: enderman_hanoi_tower
 permissions:
   eh.test:
     description: DESCRIPTION
