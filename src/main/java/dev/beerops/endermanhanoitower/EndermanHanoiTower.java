@@ -1,11 +1,11 @@
 package dev.beerops.endermanhanoitower;
 
 import io.papermc.lib.PaperLib;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-
 /**
- * Created by Levi Muniz on 7/29/20.
+ * Created by gjchen@beerops.dev.
  *
  * @author Copyright (c) Levi Muniz. All Rights Reserved.
  */
@@ -16,5 +16,11 @@ public class EndermanHanoiTower extends JavaPlugin {
     PaperLib.suggestPaper(this);
 
     saveDefaultConfig();
+
+    PluginCommand c = getCommand("dotower");
+    
+    if (c != null) {
+      c.setExecutor(new DoTowerCommand());
+    }
   }
 }
